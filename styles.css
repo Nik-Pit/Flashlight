@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Styling the header*/
+section {
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header {
+  position: relative;
+  bottom: 3em;
+  left: 5em;
+  color: #fff;
+  font-size: 6em;
+  cursor: crosshair;
+}
+.message {
+  color: #fff;
+  font-size: 2em;
+}
+section > h6 {
+  position: relative;
+  bottom: 3em;
+  right: 10em;
+}
+section > p {
+  position: relative;
+  top: 3em;
+  right: 8em;
+}
+.game-btn {
+  position: relative;
+  top: 15em;
+  right: 55em;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff3c00;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.game-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.game-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.game-btn:hover {
+  background-color: #000000;
+}
+.game-btn:hover span {
+  padding-right: 25px;
+}
+
+.game-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.game-btn a {
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.game-btn a:hover {
+  color: #ff3c00;
+}
+/*Building the flashlight*/
+.light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    transparent 10%,
+    rgba(0, 0, 0, 1) 10%
+  );
+}
