@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*Styling the header*/
 section {
+  display: none;
   position: relative;
   min-height: 100vh;
   background: #000;
@@ -28,11 +30,13 @@ section > h6 {
   position: relative;
   bottom: 3em;
   right: 10em;
+  cursor: crosshair;
 }
 section > p {
   position: relative;
   top: 3em;
   right: 8em;
+  cursor: crosshair;
 }
 .game-btn {
   position: relative;
@@ -57,7 +61,7 @@ section > p {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .game-btn span:after {
@@ -66,7 +70,7 @@ section > p {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .game-btn:hover {
   background-color: #000000;
